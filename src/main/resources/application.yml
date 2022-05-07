@@ -7,10 +7,9 @@ spring:
 
   jpa:
     database-platform: org.hibernate.dialect.MariaDB103Dialect
+    hibernate:
+      ddl-auto: create
     properties:
       hibernate:
-      show_sql: true
-      format_sql: true
-      type:
-      sql: trace
-      ddl-auto: create
+        show_sql: true
+        format_sql: true
