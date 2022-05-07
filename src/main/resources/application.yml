@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/shop?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+    username: root
+    password: atk123!
+
+  jpa:
+    database-platform: org.hibernate.dialect.MariaDB103Dialect
+    properties:
+      hibernate:
+      show_sql: true
+      format_sql: true
+      type:
+      sql: trace
+      ddl-auto: create
