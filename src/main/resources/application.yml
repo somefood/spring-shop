@@ -11,6 +11,7 @@ spring:
       ddl-auto: validate
     properties:
       hibernate:
+        default_batch_fetch: 1000
         show_sql: true
         format_sql: true
 
@@ -28,3 +29,11 @@ spring:
 
 itemImgLocation: /Users/seokjuhong/study/file/item
 uploadPath: /Users/seokjuhong/study/file
+
+logging:
+  level:
+    org:
+      hibernate:
+        type:
+          descriptor:
+            sql: trace
